@@ -1,0 +1,107 @@
+/* src/App.css */
+
+/* Page background and centering */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7fa, #f3e5f5, #ffe0b2);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card container */
+.card {
+  background: #ffffff;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #4b0082;
+}
+
+/* Form grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  resize: none;
+  transition: 0.3s;
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus {
+  outline: none;
+  border-color: #8e44ad;
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
+}
+
+/* Make textareas span two columns */
+.form-grid textarea {
+  grid-column: span 2;
+}
+
+/* Submit button */
+.form-grid button {
+  grid-column: span 2;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, #8e44ad, #e91e63);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-grid button:hover {
+  transform: scale(1.05);
+}
+
+/* Resume section */
+.resume-section {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.resume-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Resume content */
+.resume {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  white-space: pre-wrap;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Placeholder text */
+.placeholder {
+  color: #aaa;
+  font-style: italic;
+}
