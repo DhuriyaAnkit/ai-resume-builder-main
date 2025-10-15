@@ -45,6 +45,7 @@
   font-size: 1rem;
   resize: none;
   transition: 0.3s;
+  box-sizing: border-box; /* Add this to ensure padding doesn't affect width */
 }
 
 .form-grid input:focus,
@@ -54,8 +55,9 @@
   box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
 }
 
-/* Make textareas span two columns */
-.form-grid textarea {
+/* Make textareas and the skills input span two columns */
+.form-grid textarea,
+.form-grid input[name="skills"] {
   grid-column: span 2;
 }
 
@@ -98,6 +100,7 @@
   white-space: pre-wrap;
   font-size: 1rem;
   color: #555;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; /* Added for better pre formatting */
 }
 
 /* Placeholder text */
